@@ -1,0 +1,22 @@
+{
+  "chocolate" : {
+    "price": 10,
+    "inventory": 50
+  },
+  "chicken": {
+    "price" : 15,
+    "inventory": 10
+  },
+  "beef": {
+    "price": 20,
+    "inventory": 5
+  },
+  "apple":{
+    "price": 5,
+    "inventory": 3
+  },
+  "banana":{
+    "price": 5,
+    "inventory": 0
+  }
+}
