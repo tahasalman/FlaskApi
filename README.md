@@ -1,11 +1,11 @@
-#Flask API
+# Flask API
 
-##Introduction
+## Introduction
 This is a simple server-side web API built using python flask. The purpose of this is to be used for reference
 for bigger projects. In this API, we model it for an online store with a variable number of products having different prices
 and inventory.
 
-##Architecture
+## Architecture
 Since this is a simple application, it is entirely contained within one file - _app.py_.
 The inventory data is stored within *products.json*
 
@@ -16,7 +16,7 @@ each key refers to a product's name.
     - **price** : The value of this field must be a non-negative float
     - **inventory** : The value of this field must be a non-negative integer
 
-##How to Run
+## How to Run
 1. Make sure you have python3 installed. Then install all the requirements:
 > pip3 install -r requirements.txt
 
@@ -29,7 +29,7 @@ Now the application will be running at http://localhost:5000
 Going to this address should give you the message "Welcome to Flask Sample API!". If this is not the case, that means there was an error 
 launching the application. Please check the command prompt.
 
-###Using the API
+### Using the API
 Now that the application is running we can play around with the api. For this we will use the 'curl' command. This application was tested on 
 Windows 10, however, the linux commands should be similar.
 
