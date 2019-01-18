@@ -9,7 +9,7 @@ products = None
 @app.route("/")
 def index():
     print(products)
-    return "Sample API"
+    return "Welcome to Flask Sample API!"
 
 @app.route(API_URL+"all", methods=['GET'])       #products/api/v1.0/all
 def get_all_products():
@@ -52,7 +52,7 @@ def purchase():
 
 def verify_data():
     for product in products:
-        if 'price' not in product or 'inventory' not in product or product['inventory'] < 0:
+        if 'price' not in product or 'inventory' not in product or product['inventory'] < 0 or product['price'] < 0:
             return False
     return True
 
@@ -62,7 +62,7 @@ def main():
         products = json.load(f)
 
     if not verify_data():
-        app.run(debug=True)
+        app.run(debug=False)
     print("Please fix errors in inventory data!!")
 
 if __name__ == "__main__":
